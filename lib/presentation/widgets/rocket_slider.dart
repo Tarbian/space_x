@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:space_x/core/app_constants.dart';
 import 'package:space_x/domain/entities/rocket.dart';
 
 class RocketSlider extends StatelessWidget {
@@ -34,7 +35,7 @@ class RocketSlider extends StatelessWidget {
                 fit: BoxFit.cover,
                 width: double.infinity,
                 errorBuilder: (context, error, stackTrace) => Container(
-                    color: Colors.grey, child: const Icon(Icons.rocket_launch)),
+                    color: AppConstants.grey, child: const Icon(Icons.rocket_launch)),
               ),
             );
           }).toList(),
@@ -50,8 +51,8 @@ class RocketSlider extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color:
-                    selectedIndex == index ? Colors.white : Colors.transparent,
-                border: Border.all(color: Colors.white),
+                    selectedIndex == index ? AppConstants.white : Colors.transparent,
+                border: Border.all(color: AppConstants.white),
               ),
             );
           }),

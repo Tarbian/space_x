@@ -44,7 +44,7 @@ class SpaceXPage extends StatelessWidget {
                   child: Text(
                     "Missions",
                     style: TextStyle(
-                        color: Colors.white,
+                        color: AppConstants.white,
                         fontSize: 24,
                         fontWeight: FontWeight.bold),
                   ),

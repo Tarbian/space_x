@@ -7,7 +7,8 @@ abstract final class AppConstants {
   static const Color caption = Color(0xFFC5C5C5);
   static const Color title = Color(0xFFFFFFFF);
   static const Color elements = Color(0xFFFFFFFF);
-  static const Color greyText = Color(0xFFA5A5A5);
+  static const Color grey = Color(0xFFA5A5A5);
+  static const Color white = Color(0xFFC5C5C5);
 
   static TextStyle titleStyle() => const TextStyle(
         fontFamily: 'Inter',
@@ -42,7 +43,7 @@ abstract final class AppConstants {
         fontSize: 16,
         height: 1.0,
         letterSpacing: 0,
-        color: greyText,
+        color: grey,
       );
 
   static TextStyle elementsStyle() => const TextStyle(
@@ -51,6 +52,6 @@ abstract final class AppConstants {
         fontSize: 16,
         height: 1.0,
         letterSpacing: 0,
-        color: greyText,
+        color: grey,
       );
 }
